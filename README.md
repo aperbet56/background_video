@@ -3,6 +3,7 @@
 ## Le challenge
 
 Mon but était de créér un site contenant un background vidéo.
+Background vidéo qui se joue en continue et sans le son.
 
 ## Démonstration
 
