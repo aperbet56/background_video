@@ -1,0 +1,182 @@
+/**** Reset****/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/**** Style général de la page ****/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f7f7;
+}
+
+header {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    padding-top: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+    z-index: 2;
+}
+
+nav h1 a {
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+nav h1 a:hover {
+    text-decoration: none;
+}
+
+nav ul li {
+    display: inline;
+    padding-right: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+#header__content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color:#ffffff;
+    background-color: rgba(109, 107, 243, 0.534);
+}
+
+#header__content h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 25px;
+    text-align: center;
+}
+
+#header__content p {
+    font-size: 18px;
+    margin: 0 25px;
+}
+
+#header__content a {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 2px solid #ffffff;
+    padding: 15px;
+    margin: 25px 0;
+}
+
+main {
+    flex-grow: 1;
+}
+
+section {
+    margin: 25px 0;
+}
+
+section h2, section p, footer h2 {
+    margin: 25px;
+}
+
+section h2, footer h2 {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+section p {
+    line-height: 1.4;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+}
+
+footer h2, footer ul li a {
+    color: #ffffff;
+}
+
+footer ul li {
+    margin: 15px;
+}
+
+footer ul li a {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+/**** Responisve design ****/
+
+@media screen and (max-width: 772px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav h1 {
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 469px) {
+    nav ul li a {
+        display: block
+    }
+
+    #header__content p {
+        text-align: center;
+        line-height: 1.4;
+    }
+}
